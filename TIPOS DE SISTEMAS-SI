@@ -1,0 +1,49 @@
+# Análisis del Sistema de Información de Rappi
+
+---
+
+## 1. Tipo de sistema
+
+El sistema de información de Rappi es principalmente un **TPS (Transaction Processing System)**, ya que procesa transacciones en tiempo real como pedidos, pagos y entregas.
+
+Además, también incluye:
+
+- **MIS (Management Information System):** generación de reportes para la empresa  
+- **DSS (Decision Support System):** apoyo en decisiones como rutas, recomendaciones y asignación de repartidores  
+
+---
+
+## 2. Usuarios del sistema
+
+Los principales usuarios del sistema son:
+
+- **Administrador:** gestiona la plataforma, comercios y datos  
+- **Clientes:** realizan pedidos a través de la aplicación  
+- **Empleados:** repartidores y personal de soporte  
+
+---
+
+## 3. Datos que maneja el sistema
+
+El sistema gestiona diferentes tipos de datos:
+
+- Datos del cliente (nombre, dirección, teléfono)  
+- Pedidos (productos, cantidades, precios)  
+- Métodos de pago  
+- Ubicación en tiempo real  
+- Información de comercios  
+- Historial de compras  
+
+---
+
+## 4. Decisiones que apoya el sistema
+
+El sistema permite tomar decisiones como:
+
+- Qué productos recomendar al cliente  
+- Qué repartidor asignar a un pedido  
+- Qué ruta tomar (la más rápida)  
+- Qué promociones o descuentos aplicar  
+- Control de tiempos de entrega  
+
+---
