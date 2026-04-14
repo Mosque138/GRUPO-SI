@@ -16,11 +16,11 @@
 
 ## 2. Requisitos No Funcionales
 
-- **Rendimiento:** El sistema debe responder rápidamente a las solicitudes sin generar demoras en los pedidos.  
-- **Disponibilidad:** El sistema debe estar disponible las 24 horas del día para los usuarios.  
-- **Seguridad:** El sistema debe proteger los datos personales y de pago mediante mecanismos de seguridad.  
-- **Usabilidad:** La aplicación debe ser fácil de usar, con una interfaz clara para cualquier usuario.  
-- **Escalabilidad:** El sistema debe soportar varios usuarios al mismo tiempo sin afectar su funcionamiento.  
+- Rendimiento: El sistema debe responder rápidamente a las solicitudes sin generar demoras en los pedidos.  
+- Disponibilidad: El sistema debe estar disponible las 24 horas del día para los usuarios.  
+- Seguridad: El sistema debe proteger los datos personales y de pago mediante mecanismos de seguridad.  
+- Usabilidad: La aplicación debe ser fácil de usar, con una interfaz clara para cualquier usuario.  
+- Escalabilidad: El sistema debe soportar varios usuarios al mismo tiempo sin afectar su funcionamiento.  
 
 ## 3. Entrega
 
