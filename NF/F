@@ -1,0 +1,21 @@
+# Proyecto: Sistema de Información - Rappi
+
+## Requerimientos Funcionales
+1. Registro e inicio de sesión de usuarios.
+2. Búsqueda de productos y servicios.
+3. Realización de pedidos en línea.
+4. Sistema de pagos digitales.
+5. Asignación de repartidores.
+6. Seguimiento en tiempo real.
+7. Sistema de calificaciones.
+8. Notificaciones del pedido.
+9. Gestión de comercios aliados.
+
+## Requerimientos No Funcionales
+1. Alta disponibilidad (24/7).
+2. Respuesta rápida del sistema.
+3. Seguridad de datos y pagos.
+4. Interfaz amigable.
+5. Escalabilidad del sistema.
+6. Compatibilidad con múltiples dispositivos.
+7. Confiabilidad en el servicio.
