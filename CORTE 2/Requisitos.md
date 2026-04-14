@@ -3,43 +3,27 @@
 
 ---
 
-## 1. Requerimientos Funcionales
+## 1. Requisitos Funcionales
 
-El sistema debe permitir:
-
-- Registrar usuarios (clientes, comercios y repartidores)
-- Iniciar sesión en la plataforma
-- Visualizar productos disponibles
-- Realizar pedidos
-- Seleccionar método de pago
-- Procesar pagos
-- Asignar automáticamente un repartidor
-- Hacer seguimiento del pedido en tiempo real
-- Notificar al cliente sobre el estado del pedido
-- Gestionar pedidos (crear, actualizar, cancelar)
-- Generar reportes de ventas
-- Administrar la información de usuarios y comercios
+- Registro de usuarios: El sistema debe permitir registrar clientes y repartidores.  
+- Inicio de sesión: El sistema debe permitir ingresar con usuario y contraseña.  
+- Realizar pedidos: El sistema debe permitir seleccionar y pedir productos.  
+- Procesar pagos: El sistema debe permitir pagar los pedidos.  
+- Asignar repartidor: El sistema debe asignar un repartidor automáticamente.  
+- Seguimiento: El sistema debe mostrar el estado del pedido.  
 
 ---
 
-## 2. Requerimientos No Funcionales
+## 2. Requisitos No Funcionales
 
-El sistema debe cumplir con:
-
-- **Rendimiento:** Procesar pedidos en tiempo real sin demoras
-- **Disponibilidad:** Estar disponible 24/7
-- **Seguridad:** Proteger los datos de los usuarios (contraseñas, pagos)
-- **Escalabilidad:** Soportar múltiples usuarios simultáneamente
-- **Usabilidad:** Interfaz fácil de usar en la aplicación móvil
-- **Confiabilidad:** Garantizar que los pedidos se procesen correctamente
-- **Compatibilidad:** Funcionar en dispositivos móviles Android y iOS
-- **Mantenibilidad:** Facilitar actualizaciones y mejoras del sistema
+- **Rendimiento:** El sistema debe responder rápidamente.  
+- **Disponibilidad:** El sistema debe estar disponible 24/7.  
+- **Seguridad:** El sistema debe proteger los datos del usuario.  
+- **Usabilidad:** La aplicación debe ser fácil de usar.  
+- **Escalabilidad:** El sistema debe soportar varios usuarios al mismo tiempo.  
 
 ---
 
-## 3. Entrega
+## Conclusión
 
-Este documento corresponde a los requisitos del sistema y será almacenado en el repositorio del proyecto como:
-
-```bash
-Requisitos.md
+Estos requisitos definen el funcionamiento básico del sistema de Rappi.
