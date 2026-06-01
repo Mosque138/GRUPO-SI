@@ -9,7 +9,7 @@ Se eligió este tipo de estructura porque permite organizar mejor la informació
 
 ---
 
-##- Modelado de Roles
+## - Modelado de Roles
 
 | Rol           | Función                                          | Permisos                                                                       |
 | ------------- | ------------------------------------------------ | ------------------------------------------------------------------------------ |
