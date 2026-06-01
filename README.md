@@ -163,3 +163,47 @@ En el desarrollo del sistema se tuvieron en cuenta diferentes aspectos para gara
 * **Integridad:** Los datos deben estar completos y relacionados correctamente entre las tablas de la base de datos.
 
 * **Completitud:** Los campos obligatorios deben contener información antes de guardar un registro.
+
+# 2. El Prototipo Funcional (Lógica del Sistema)
+
+## - Validación de Entrada
+
+El sistema de gestión de pedidos a domicilio cuenta con validaciones que permiten evitar el ingreso de datos incorrectos o incompletos. Estas validaciones ayudan a evitar errores en la información almacenada y garantizan una mejor calidad de los datos,
+Algunas de las validaciones implementadas son:
+
+* No permitir campos obligatorios vacíos.
+* Verificar que el número de teléfono contenga únicamente números.
+* Validar que el correo electrónico tenga un formato correcto.
+* Evitar registrar cantidades negativas en los productos.
+* No permitir precios iguales o menores a cero.
+* Verificar que exista un cliente antes de registrar un pedido.
+* Comprobar que los estados de los pedidos correspondan a las opciones definidas por el sistema.
+
+## - Arquitectura
+
+El sistema maneja la información siguiendo una estructura organizada que va desde la captura de datos hasta la generación de información útil para la empresa.
+
+El proceso funciona de la siguiente manera:
+
+1. Se registran los datos de clientes, productos y repartidores.
+2. El cliente realiza un pedido.
+3. El sistema almacena la información del pedido y sus productos.
+4. El pedido es asignado a un repartidor.
+5. El repartidor actualiza el estado de la entrega.
+6. Toda la información queda almacenada en la base de datos.
+7. Finalmente, el sistema genera reportes sobre pedidos, entregas y ventas realizadas.
+
+## - Tipo de Sistema de Información
+
+El proyecto se clasifica como un sistema TPS (Transaction Processing System o Sistema de Procesamiento de Transacciones).
+Esto se debe a que su función principal es registrar y procesar operaciones diarias como:
+
+* Registro de clientes.
+* Registro de productos.
+* Creación de pedidos.
+* Asignación de repartidores.
+* Registro de entregas.
+* Actualización de estados de pedidos.
+
+Este tipo de sistema es utilizado principalmente por el nivel operativo de la empresa, ya que son los empleados encargados de realizar las actividades diarias y registrar la información necesaria para el funcionamiento del servicio de domicilios.
+Además, los reportes generados por el sistema pueden ser consultados por supervisores o administradores para realizar seguimiento a las operaciones y al desempeño del negocio.
