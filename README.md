@@ -42,38 +42,100 @@ Se eligió este tipo de estructura porque permite organizar mejor la informació
 
 ---
 
-## 4. Diccionario de Datos
+# 4. Diccionario de Datos
 
-### Tabla Clientes
+## Tabla Clientes
 
-| Campo      | Tipo de dato | Validación                               | Calidad priorizada |
-| ---------- | ------------ | ---------------------------------------- | ------------------ |
-| id_cliente | INT          | Valor único                              | Integridad         |
-| nombre     | VARCHAR(100) | No puede estar vacío                     | Precisión          |
-| telefono   | VARCHAR(15)  | Solo números                             | Exactitud          |
-| direccion  | VARCHAR(200) | Campo obligatorio                        | Completitud        |
-| correo     | VARCHAR(100) | Debe tener formato de correo electrónico | Exactitud          |
-
-### Tabla Pedidos
-
-| Campo        | Tipo de dato  | Validación                        | Calidad priorizada |
-| ------------ | ------------- | --------------------------------- | ------------------ |
-| id_pedido    | INT           | Valor único                       | Integridad         |
-| id_cliente   | INT           | Debe existir en la tabla Clientes | Consistencia       |
-| fecha_pedido | DATETIME      | Fecha válida                      | Integridad         |
-| estado       | VARCHAR(30)   | Pendiente, En camino o Entregado  | Consistencia       |
-| total        | DECIMAL(10,2) | No puede ser negativo             | Exactitud          |
-
-### Tabla Productos
-
-| Campo           | Tipo de dato  | Validación              | Calidad priorizada |
-| --------------- | ------------- | ----------------------- | ------------------ |
-| id_producto     | INT           | Valor único             | Integridad         |
-| nombre_producto | VARCHAR(100)  | Campo obligatorio       | Precisión          |
-| precio          | DECIMAL(10,2) | Debe ser mayor que cero | Exactitud          |
-| stock           | INT           | No puede ser negativo   | Consistencia       |
+| Campo      | Tipo de dato | Validación               | Calidad priorizada |
+| ---------- | ------------ | ------------------------ | ------------------ |
+| id_cliente | INT          | Valor único              | Integridad         |
+| nombre     | VARCHAR(100) | No puede estar vacío     | Precisión          |
+| telefono   | VARCHAR(15)  | Solo números             | Exactitud          |
+| direccion  | VARCHAR(200) | Campo obligatorio        | Completitud        |
+| correo     | VARCHAR(100) | Formato de correo válido | Exactitud          |
 
 ---
+
+## Tabla Usuarios
+
+| Campo          | Tipo de dato | Validación                 | Calidad priorizada |
+| -------------- | ------------ | -------------------------- | ------------------ |
+| id_usuario     | INT          | Valor único                | Integridad         |
+| nombre_usuario | VARCHAR(50)  | Obligatorio                | Precisión          |
+| contraseña     | VARCHAR(255) | Mínimo 8 caracteres        | Seguridad          |
+| rol            | VARCHAR(30)  | Debe existir un rol válido | Consistencia       |
+| estado         | VARCHAR(20)  | Activo o Inactivo          | Consistencia       |
+
+---
+
+## Tabla Roles
+
+| Campo       | Tipo de dato | Validación  | Calidad priorizada |
+| ----------- | ------------ | ----------- | ------------------ |
+| id_rol      | INT          | Valor único | Integridad         |
+| nombre_rol  | VARCHAR(30)  | Obligatorio | Precisión          |
+| descripcion | VARCHAR(150) | Opcional    | Completitud        |
+
+---
+
+## Tabla Productos
+
+| Campo           | Tipo de dato  | Validación            | Calidad priorizada |
+| --------------- | ------------- | --------------------- | ------------------ |
+| id_producto     | INT           | Valor único           | Integridad         |
+| nombre_producto | VARCHAR(100)  | Obligatorio           | Precisión          |
+| precio          | DECIMAL(10,2) | Mayor que cero        | Exactitud          |
+| stock           | INT           | No puede ser negativo | Consistencia       |
+| descripcion     | VARCHAR(255)  | Opcional              | Completitud        |
+
+---
+
+## Tabla Pedidos
+
+| Campo        | Tipo de dato  | Validación               | Calidad priorizada |
+| ------------ | ------------- | ------------------------ | ------------------ |
+| id_pedido    | INT           | Valor único              | Integridad         |
+| id_cliente   | INT           | Debe existir en Clientes | Consistencia       |
+| fecha_pedido | DATETIME      | Fecha válida             | Integridad         |
+| estado       | VARCHAR(30)   | Estado permitido         | Consistencia       |
+| total        | DECIMAL(10,2) | No negativo              | Exactitud          |
+
+---
+
+## Tabla Detalle_Pedido
+
+| Campo       | Tipo de dato  | Validación                | Calidad priorizada |
+| ----------- | ------------- | ------------------------- | ------------------ |
+| id_detalle  | INT           | Valor único               | Integridad         |
+| id_pedido   | INT           | Debe existir en Pedidos   | Consistencia       |
+| id_producto | INT           | Debe existir en Productos | Consistencia       |
+| cantidad    | INT           | Mayor que cero            | Exactitud          |
+| subtotal    | DECIMAL(10,2) | Calculado automáticamente | Precisión          |
+
+---
+
+## Tabla Repartidores
+
+| Campo          | Tipo de dato | Validación                 | Calidad priorizada |
+| -------------- | ------------ | -------------------------- | ------------------ |
+| id_repartidor  | INT          | Valor único                | Integridad         |
+| nombre         | VARCHAR(100) | Obligatorio                | Precisión          |
+| telefono       | VARCHAR(15)  | Solo números               | Exactitud          |
+| vehiculo       | VARCHAR(50)  | Obligatorio                | Completitud        |
+| disponibilidad | VARCHAR(20)  | Disponible o No Disponible | Consistencia       |
+
+---
+
+## Tabla Entregas
+
+| Campo          | Tipo de dato | Validación                   | Calidad priorizada |
+| -------------- | ------------ | ---------------------------- | ------------------ |
+| id_entrega     | INT          | Valor único                  | Integridad         |
+| id_pedido      | INT          | Debe existir en Pedidos      | Consistencia       |
+| id_repartidor  | INT          | Debe existir en Repartidores | Consistencia       |
+| fecha_entrega  | DATETIME     | Fecha válida                 | Integridad         |
+| estado_entrega | VARCHAR(30)  | Entregado o Pendiente        | Consistencia       |
+
 
 ## 5. Reglas para evitar errores en los datos (GIGO)
 
