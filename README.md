@@ -1,7 +1,7 @@
 # GRUPO-SI
 # Sistema de Gestión de Pedidos a Domicilio
 
-## 1. Contexto Administrativo
+## 1. - Contexto Administrativo
 
 El sistema de gestión de pedidos a domicilio fue diseñado con una estructura centralizada, ya que la información y los procesos son controlados por un administrador principal. De esta forma se puede llevar un mejor control de los pedidos, los clientes y los repartidores.
 
@@ -9,7 +9,7 @@ Se eligió este tipo de estructura porque permite organizar mejor la informació
 
 ---
 
-## 2. Modelado de Roles
+##- Modelado de Roles
 
 | Rol           | Función                                          | Permisos                                                                       |
 | ------------- | ------------------------------------------------ | ------------------------------------------------------------------------------ |
@@ -21,7 +21,7 @@ Se eligió este tipo de estructura porque permite organizar mejor la informació
 
 ---
 
-## 3. Matriz RACI
+## - Matriz RACI
 
 | Actividad           | Administrador | Operador | Repartidor | Auditor |
 | ------------------- | ------------- | -------- | ---------- | ------- |
@@ -42,7 +42,7 @@ Se eligió este tipo de estructura porque permite organizar mejor la informació
 
 ---
 
-# 4. Diccionario de Datos
+# - Diccionario de Datos
 
 ## Tabla Clientes
 
