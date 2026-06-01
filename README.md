@@ -149,3 +149,17 @@ Para evitar que se almacene información incorrecta en el sistema, se tendrán e
 * Limitar el acceso a ciertas funciones según el rol de cada usuario.
 
 Estas medidas ayudan a que la información registrada sea más confiable y útil para el funcionamiento del sistema.
+
+## Dimensiones de Calidad de los Datos
+
+En el desarrollo del sistema se tuvieron en cuenta diferentes aspectos para garantizar que la información almacenada sea confiable y útil.
+
+* **Precisión:** Los datos deben representar correctamente la información real. Por ejemplo, que el nombre de un cliente esté escrito correctamente.
+
+* **Exactitud:** Los valores registrados deben ser correctos. Por ejemplo, que el precio de un producto corresponda al valor real.
+
+* **Consistencia:** La información debe mantenerse igual en todas las partes del sistema. Por ejemplo, que un cliente registrado tenga el mismo identificador en todos sus pedidos.
+
+* **Integridad:** Los datos deben estar completos y relacionados correctamente entre las tablas de la base de datos.
+
+* **Completitud:** Los campos obligatorios deben contener información antes de guardar un registro.
