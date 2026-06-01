@@ -137,7 +137,7 @@ Se eligió este tipo de estructura porque permite organizar mejor la informació
 | estado_entrega | VARCHAR(30)  | Entregado o Pendiente        | Consistencia       |
 
 
-## 5. Reglas de validacion
+## - Reglas de validacion
 
 Para evitar que se almacene información incorrecta en el sistema, se tendrán en cuenta las siguientes validaciones:
 
