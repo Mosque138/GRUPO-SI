@@ -46,13 +46,8 @@ Se eligió este tipo de estructura porque permite organizar mejor la informació
 
 ## Tabla Clientes
 
-| Campo      | Tipo de dato | Validación               | Calidad priorizada |
-| ---------- | ------------ | ------------------------ | ------------------ |
-| id_cliente | INT          | Valor único              | Integridad         |
-| nombre     | VARCHAR(100) | No puede estar vacío     | Precisión          |
-| telefono   | VARCHAR(15)  | Solo números             | Exactitud          |
-| direccion  | VARCHAR(200) | Campo obligatorio        | Completitud        |
-| correo     | VARCHAR(100) | Formato de correo válido | Exactitud          |
+<img width="842" height="123" alt="clientes" src="https://github.com/user-attachments/assets/d44081cb-b32e-4899-ab56-36e49740a7e6" />
+
 
 ---
 
@@ -137,32 +132,6 @@ Se eligió este tipo de estructura porque permite organizar mejor la informació
 | estado_entrega | VARCHAR(30)  | Entregado o Pendiente        | Consistencia       |
 
 
-## - Reglas de validacion
-
-Para evitar que se almacene información incorrecta en el sistema, se tendrán en cuenta las siguientes validaciones:
-
-* No permitir campos vacíos en la información principal.
-* Verificar que los correos electrónicos tengan un formato válido.
-* No permitir cantidades o precios negativos.
-* Comprobar que el cliente exista antes de registrar un pedido.
-* Utilizar estados definidos para los pedidos.
-* Limitar el acceso a ciertas funciones según el rol de cada usuario.
-
-Estas medidas ayudan a que la información registrada sea más confiable y útil para el funcionamiento del sistema.
-
-## Dimensiones de Calidad de los Datos
-
-En el desarrollo del sistema se tuvieron en cuenta diferentes aspectos para garantizar que la información almacenada sea confiable y útil.
-
-* **Precisión:** Los datos deben representar correctamente la información real. Por ejemplo, que el nombre de un cliente esté escrito correctamente.
-
-* **Exactitud:** Los valores registrados deben ser correctos. Por ejemplo, que el precio de un producto corresponda al valor real.
-
-* **Consistencia:** La información debe mantenerse igual en todas las partes del sistema. Por ejemplo, que un cliente registrado tenga el mismo identificador en todos sus pedidos.
-
-* **Integridad:** Los datos deben estar completos y relacionados correctamente entre las tablas de la base de datos.
-
-* **Completitud:** Los campos obligatorios deben contener información antes de guardar un registro.
 
 # 2. El Prototipo Funcional (Lógica del Sistema)
 
