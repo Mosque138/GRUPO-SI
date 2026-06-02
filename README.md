@@ -53,83 +53,43 @@ Se eligió este tipo de estructura porque permite organizar mejor la informació
 
 ## Tabla Usuarios
 
-| Campo          | Tipo de dato | Validación                 | Calidad priorizada |
-| -------------- | ------------ | -------------------------- | ------------------ |
-| id_usuario     | INT          | Valor único                | Integridad         |
-| nombre_usuario | VARCHAR(50)  | Obligatorio                | Precisión          |
-| contraseña     | VARCHAR(255) | Mínimo 8 caracteres        | Seguridad          |
-| rol            | VARCHAR(30)  | Debe existir un rol válido | Consistencia       |
-| estado         | VARCHAR(20)  | Activo o Inactivo          | Consistencia       |
+<img width="841" height="120" alt="usuarios" src="https://github.com/user-attachments/assets/be35b4cc-3eef-4aa3-a851-0234c148080e" />
 
 ---
 
 ## Tabla Roles
 
-| Campo       | Tipo de dato | Validación  | Calidad priorizada |
-| ----------- | ------------ | ----------- | ------------------ |
-| id_rol      | INT          | Valor único | Integridad         |
-| nombre_rol  | VARCHAR(30)  | Obligatorio | Precisión          |
-| descripcion | VARCHAR(150) | Opcional    | Completitud        |
+<img width="839" height="78" alt="roles" src="https://github.com/user-attachments/assets/249a469a-4476-4a9f-ba35-d746990ac073" />
 
 ---
 
 ## Tabla Productos
 
-| Campo           | Tipo de dato  | Validación            | Calidad priorizada |
-| --------------- | ------------- | --------------------- | ------------------ |
-| id_producto     | INT           | Valor único           | Integridad         |
-| nombre_producto | VARCHAR(100)  | Obligatorio           | Precisión          |
-| precio          | DECIMAL(10,2) | Mayor que cero        | Exactitud          |
-| stock           | INT           | No puede ser negativo | Consistencia       |
-| descripcion     | VARCHAR(255)  | Opcional              | Completitud        |
+<img width="839" height="124" alt="productos" src="https://github.com/user-attachments/assets/899af365-bc97-482d-8272-f7827e404966" />
 
 ---
 
 ## Tabla Pedidos
 
-| Campo        | Tipo de dato  | Validación               | Calidad priorizada |
-| ------------ | ------------- | ------------------------ | ------------------ |
-| id_pedido    | INT           | Valor único              | Integridad         |
-| id_cliente   | INT           | Debe existir en Clientes | Consistencia       |
-| fecha_pedido | DATETIME      | Fecha válida             | Integridad         |
-| estado       | VARCHAR(30)   | Estado permitido         | Consistencia       |
-| total        | DECIMAL(10,2) | No negativo              | Exactitud          |
+<img width="842" height="121" alt="pedidos" src="https://github.com/user-attachments/assets/61d9a337-6559-49ef-a21c-baaf36b8f109" />
 
 ---
 
 ## Tabla Detalle_Pedido
 
-| Campo       | Tipo de dato  | Validación                | Calidad priorizada |
-| ----------- | ------------- | ------------------------- | ------------------ |
-| id_detalle  | INT           | Valor único               | Integridad         |
-| id_pedido   | INT           | Debe existir en Pedidos   | Consistencia       |
-| id_producto | INT           | Debe existir en Productos | Consistencia       |
-| cantidad    | INT           | Mayor que cero            | Exactitud          |
-| subtotal    | DECIMAL(10,2) | Calculado automáticamente | Precisión          |
+<img width="842" height="120" alt="detalle pedido" src="https://github.com/user-attachments/assets/f48f9c87-8c7f-45f9-9064-7e3c0b0b6f94" />
 
 ---
 
 ## Tabla Repartidores
 
-| Campo          | Tipo de dato | Validación                 | Calidad priorizada |
-| -------------- | ------------ | -------------------------- | ------------------ |
-| id_repartidor  | INT          | Valor único                | Integridad         |
-| nombre         | VARCHAR(100) | Obligatorio                | Precisión          |
-| telefono       | VARCHAR(15)  | Solo números               | Exactitud          |
-| vehiculo       | VARCHAR(50)  | Obligatorio                | Completitud        |
-| disponibilidad | VARCHAR(20)  | Disponible o No Disponible | Consistencia       |
+<img width="839" height="121" alt="repartidores" src="https://github.com/user-attachments/assets/f3ccf176-eac8-4a0a-a013-1183bcdd4535" />
 
 ---
 
 ## Tabla Entregas
 
-| Campo          | Tipo de dato | Validación                   | Calidad priorizada |
-| -------------- | ------------ | ---------------------------- | ------------------ |
-| id_entrega     | INT          | Valor único                  | Integridad         |
-| id_pedido      | INT          | Debe existir en Pedidos      | Consistencia       |
-| id_repartidor  | INT          | Debe existir en Repartidores | Consistencia       |
-| fecha_entrega  | DATETIME     | Fecha válida                 | Integridad         |
-| estado_entrega | VARCHAR(30)  | Entregado o Pendiente        | Consistencia       |
+<img width="842" height="121" alt="entregas" src="https://github.com/user-attachments/assets/ec727c03-34c3-4259-9c1c-cf5aba478be1" />
 
 
 
